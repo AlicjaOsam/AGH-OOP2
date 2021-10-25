@@ -12,7 +12,6 @@ public class Rnd{
     /**Tablica, gdzie kazda komorka to suma k pseudolosowych liczb z przedzialu 0.0-1.0*/
     double [] tab;
 
-    /**Konstruktor*/
     Rnd(int a, int b){
         N = a;
         k = b;
@@ -24,16 +23,12 @@ public class Rnd{
         }
     }
 
-    /**funkcja wypisujaca*/
     void Print(){
         for(int i=0; i<N; i++){
             System.out.println("[" + i + "]="+tab[i]);
         }
     }
 
-    /**
-    *@return min najmniejsza wartosc w tablicy
-    */
     double Min(){
         double min = tab[0];
         for(int i=1; i<N; i++){
@@ -44,9 +39,6 @@ public class Rnd{
         return min;
     }
 
-    /**
-    *@return max najwieksza wartosc w tablicy
-    */
     double Max(){
         double max = tab[0];
         for(int i=1; i<N; i++){
@@ -57,9 +49,6 @@ public class Rnd{
         return max;
     }
 
-    /**
-    *@return av srednia wartosc w tablicy
-    */
     double Average(){
         double av = tab[0];
         for(int i=1; i<N; i++){
